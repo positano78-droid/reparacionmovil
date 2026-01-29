@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Reparación Móviles - Preview</title>
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3616/3616231.png">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #0f172a; /* Un azul muy oscuro profesional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        /* Contenedor del Iframe */
+        .demo-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            border: none;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* AJUSTES PARA PC (Pantallas mayores a 768px) */
+        @media (min-width: 769px) {
+            iframe {
+                width: 450px; /* Tamaño tipo teléfono en PC */
+                height: 90vh;
+                border-radius: 30px; /* Bordes redondeados para simular un móvil */
+                border: 8px solid #334155;
+            }
+            body {
+                background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+            }
+        }
+
+        /* AJUSTES PARA MÓVIL (Pantallas pequeñas) */
+        @media (max-width: 768px) {
+            iframe {
+                width: 100vw;
+                height: 100vh;
+                border: none;
+                border-radius: 0;
+            }
+            .badge { display: none; } /* Ocultamos el badge en móvil para ganar espacio */
+        }
+
+        .badge {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="badge">Vibe Check: Reparación Móviles</div>
+
+    <div class="demo-container">
+        <iframe 
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/make/Qpz0yJFRJQw2cooxh9u3P6/Reparacion-moviles?t=TsuViUFqFXNnmRRB-1&hide-footer=true&chrome=false" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
