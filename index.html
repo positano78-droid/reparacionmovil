@@ -2,70 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Demo: Reparación Móviles</title>
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3616/3616231.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Demo Reparación Móviles</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #0f172a; /* Fondo oscuro profesional */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        .demo-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        iframe {
-            border: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Ajuste para PC: Simulamos un móvil físico */
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #0f172a; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+        iframe { border: none; width: 100%; height: 100%; }
         @media (min-width: 769px) {
-            iframe {
-                width: 420px;
-                height: 88vh;
-                border-radius: 40px;
-                border: 12px solid #1e293b;
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
-            }
-            body {
-                background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
-            }
-        }
-
-        /* Ajuste para Móvil: Pantalla completa */
-        @media (max-width: 768px) {
-            iframe {
-                width: 100vw;
-                height: 100vh;
-                border-radius: 0;
-                border: none;
-            }
+            iframe { width: 420px; height: 88vh; border-radius: 35px; border: 10px solid #1e293b; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
         }
     </style>
 </head>
 <body>
-
-    <div class="demo-container">
-        <iframe 
-            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/make/Qpz0yJFRJQw2cooxh9u3P6/Reparacion-moviles?fullscreen=1%26t=8LA5DQ45owzK1wvb-1" 
-            allowfullscreen>
-        </iframe>
-    </div>
-
+    <iframe 
+        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/Qpz0yJFRJQw2cooxh9u3P6/Reparacion-moviles" 
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
